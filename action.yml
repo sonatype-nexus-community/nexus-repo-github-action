@@ -1,0 +1,43 @@
+name: 'Nexus Repo for GitHub Actions'
+author: 'Sonatype'
+description: 'Publish components from GitHub Action workflow to Nexus Repository.'
+inputs:
+  serverUrl:
+    description: 'Nexus Repository Server URL'
+    required: true
+  username:
+    description: 'Username to connect to Nexus Repo to publish components'
+    required: true
+  password:
+    description: 'Password to connect to Nexus Repo to publish components'
+    required: true
+  format:
+    description: 'Component format e.g. maven2'
+    required: true
+  repository:
+    description: 'Name of target repository on Nexus Repo e.g. maven-releases'
+    required: true
+  coordinates:
+    description: 'Component coordinates in key=value format. e.g. groupId=com.example artifactId=app version=1.0.0'
+    required: true
+  assets:
+    description: 'Component assets in key=value format. e.g. extension=jar'
+    required: true
+  filename:
+    description: 'File to publish'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.serverUrl }}
+    - ${{ inputs.username }}
+    - ${{ inputs.password }}
+    - ${{ inputs.format }}
+    - ${{ inputs.repository }}
+    - ${{ inputs.coordinates }}
+    - ${{ inputs.assets }}
+    - ${{ inputs.filename }}
+branding:
+  icon: 'shield'
+  color: 'gray-dark'
