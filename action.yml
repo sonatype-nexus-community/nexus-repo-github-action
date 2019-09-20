@@ -39,5 +39,5 @@ runs:
     - ${{ inputs.assets }}
     - ${{ inputs.filename }}
 branding:
-  icon: 'shield'
+  icon: 'package'
   color: 'gray-dark'
