@@ -18,7 +18,7 @@ LABEL com.github.actions.name="Nexus Repo for GitHub Actions" \
 
 USER root
 
-RUN apk add sed
+RUN apk add --no-cache sed
 
 COPY entrypoint.sh /entrypoint.sh
 
