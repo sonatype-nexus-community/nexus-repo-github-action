@@ -59,7 +59,7 @@ jobs:
     - name: Build with Maven
       run: mvn package --file pom.xml
     - name: Nexus Repo Publish
-      uses: ./
+      uses: sonatype-nexus-community/nexus-repo-github-action@master
       with:
         serverUrl: http://163c6cdd.ngrok.io
         username: admin
