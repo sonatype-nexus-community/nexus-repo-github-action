@@ -1,4 +1,4 @@
-# Nexus Repo for GitHub Actions
+# Nexus Repository Publisher for GitHub Actions
 
 Publish components from GitHub Action workflow to Nexus Repository.
 

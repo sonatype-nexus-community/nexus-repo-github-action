@@ -13,7 +13,7 @@
 # limitations under the License.
 
 FROM sonatype/nexus-platform-cli
-LABEL com.github.actions.name="Nexus Repo for GitHub Actions" \
+LABEL com.github.actions.name="Nexus Repository Publisher for GitHub Actions" \
     com.github.actions.description="Publish components from GitHub Action workflow to Nexus Repository."
 
 USER root

@@ -1,4 +1,4 @@
-name: 'Nexus Repo for GitHub Actions'
+name: 'Nexus Repository Publisher for GitHub Actions'
 author: 'Sonatype'
 description: 'Publish components from GitHub Action workflow to Nexus Repository.'
 inputs:
