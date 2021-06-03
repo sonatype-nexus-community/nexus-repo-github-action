@@ -71,6 +71,8 @@ jobs:
         filename: ./target/app-1.0.0.jar
 ```
 
+Another example: a [test project](https://github.com/bhamail/nexus-repo-github-action-test) that uses the `nexus-repo-github-action`
+
 ## The Fine Print
 
 It is worth noting that this is **NOT SUPPORTED** by Sonatype, and is a contribution of ours
